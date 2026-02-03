@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Try out my game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.png" />
+  </head>
+  <body>
+    <div class="tos-card">
+      <h1>Terms of Service</h1>
+      <p class="tos-text">Please agree to continue</p>
+      <label class="terms">
+        <input type="checkbox" id="agree" style="cursor: pointer" />
+        I agree to the
+        <a href="tos.html">Terms of Service</a>
+      </label>
+      <button id="continueBtn" disabled>Continue</button>
+    </div>
+
+    <div id="toast"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const checkbox = document.getElementById("agree");
+        const button = document.getElementById("continueBtn");
+
+        checkbox.addEventListener("change", () => {
+          button.disabled = !checkbox.checked;
+        });
+
+        button.addEventListener("mouseover", () => {
+          if (!button.disabled) button.style.cursor = "pointer";
+        });
+
+        button.addEventListener("click", () => {
+          if (!button.disabled) {
+            window.location.href = "signup.html";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

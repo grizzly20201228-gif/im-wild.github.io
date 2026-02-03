@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Terms of Service</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Scrollable paragraph inside card */
+      .tos-card {
+        background: rgba(30, 41, 59, 0.85);
+        padding: 45px 40px;
+        border-radius: 30px;
+        width: 500px;
+        max-width: 90%;
+        text-align: center;
+        backdrop-filter: blur(15px);
+        position: relative;
+        box-shadow:
+          0 0 20px rgba(0, 212, 255, 0.2),
+          0 0 40px rgba(0, 212, 255, 0.15),
+          0 25px 50px rgba(0, 0, 0, 0.6),
+          inset 0 0 15px rgba(0, 0, 0, 0.15);
+        border: 2px solid rgba(56, 189, 248, 0.4);
+        color: #fff;
+        overflow: hidden;
+      }
+
+      h1 {
+        font-size: 2.25rem;
+        color: #38bdf8;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+        text-shadow:
+          0 0 6px rgba(56, 189, 248, 0.5),
+          0 0 12px rgba(14, 165, 233, 0.35);
+        font-weight: 700;
+      }
+
+      .tos-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #cbd5e1;
+        text-align: left;
+        max-height: 300px;
+        overflow-y: auto;
+        padding-right: 10px;
+        margin-bottom: 30px;
+        text-shadow: 0 0 3px rgba(56, 189, 248, 0.3);
+      }
+
+      .tos-text::-webkit-scrollbar {
+        width: 6px;
+      }
+      .tos-text::-webkit-scrollbar-thumb {
+        background: #38bdf8;
+        border-radius: 3px;
+      }
+      .tos-text::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 3px;
+      }
+
+      button {
+        padding: 14px 28px;
+        border-radius: 20px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+        color: #0f172a;
+        box-shadow:
+          0 10px 25px rgba(0, 0, 0, 0.5),
+          0 0 10px rgba(56, 189, 248, 0.4);
+        transition: 0.4s;
+      }
+      button:hover {
+        transform: translateY(-3px) scale(1.02);
+        background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tos-card">
+      <h1>Terms of Service</h1>
+      <p class="tos-text">
+        By agreeing to the Terms of Service, you acknowledge and accept that
+        certain technical and usage-related data may be collected, stored, and
+        processed for gameplay, analytics, and security purposes. This
+        information is used to ensure proper functionality of the game, prevent
+        abuse, and improve overall user experience. In addition, by agreeing,
+        you consent to having aspects of your in-game identity and digital
+        presence generated or influenced by artificial intelligence. These
+        AI-generated representations may interact with or reflect elements of
+        your real-world identity, potentially affecting how traits, behaviors,
+        or decisions are interpreted within the game world.<br /><br />
+        By agreeing to the Terms of Service, you further consent to the
+        collection of network-related identifiers, including your ip address,
+        which may be used for moderation, security, and system integrity
+        purposes. Participation in the game constitutes explicit consent to
+        these processes and to any AI-generated content associated with your
+        account, which may influence both your digital footprint and certain
+        aspects of your real-life identity.
+      </p>
+      <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+      function goBack() {
+        window.location.href = "index.html"; // go to your index.html in the same tab
+      }
+    </script>
+  </body>
+</html>
